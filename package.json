@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "mapbox-gl": "^0.53.1",
     "next": "^8.0.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
