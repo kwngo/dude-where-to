@@ -1,4 +1,11 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic'
+
+
+const DynamicMap = dynamic(() => import('../components/map'), {
+  loading: () => <p>Loading...</p>,
+  ssr: false
+});
 
 function IndexPage() {
   return (
@@ -6,9 +13,9 @@ function IndexPage() {
       <Head>
         <title>My page title</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
       </Head>
       <p>Hello world!</p>
+      <DynamicMap />
     </div>
   );
 }
