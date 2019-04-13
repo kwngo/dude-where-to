@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "dotenv-webpack": "^1.7.0",
     "mapbox-gl": "^0.53.1",
     "next": "^8.0.4",
     "react": "^16.8.6",

@@ -1,7 +1,7 @@
 import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
 
 const MapboxGl = ReactMapboxGl({
-  accessToken: "pk.eyJ1IjoiYXBvY2hvY29sYXRlIiwiYSI6ImNqdWZydmh0cTBoZDU0NHBidHo1b3JnaDQifQ.Y_z_8Ghzpp4zWX1uAxiUEw",
+  accessToken: process.env.MAPBOX_ACCESS_TOKEN,
 });
 
 function Map() {
