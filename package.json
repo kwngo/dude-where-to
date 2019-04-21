@@ -5,10 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "dotenv-webpack": "^1.7.0",
     "mapbox-gl": "^0.53.1",
     "next": "^8.0.4",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-components": "^0.5.1",
     "react-dom": "^16.8.6",
     "react-mapbox-gl": "^4.2.1"
   },

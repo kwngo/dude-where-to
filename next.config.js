@@ -1,11 +1,12 @@
 require('dotenv').config()
 
-const withCSS = require('@zeit/next-css')
+const withCss = require('@zeit/next-css');
+const withSass = require('@zeit/next-sass')
 const path = require('path')
 const Dotenv = require('dotenv-webpack')
 
 
-module.exports = withCSS({
+module.exports = withCss(withSass({
   webpack(config, options) {
 
     config.plugins = config.plugins || []
@@ -23,5 +24,4 @@ module.exports = withCSS({
 
 
   }
-    
-});
+}));
